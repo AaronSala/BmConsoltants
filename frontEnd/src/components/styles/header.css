@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* start global  styles */
+
+
+
+*:not(.slick-track):not(.slick-list) {
+    transition: 0.4s;
+}
+    :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --orange: #ffc107;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+            --white-color: #fafafa;
+            --black-color: #040404;
+            --bm-red: #f44336;
+            --bm-orange: #ff9800;
+            --bm-yellow: #ffeb3b;
+            --bm-text-gray: #d7d4cd;   }
+
+
+.header{
+
+    border-bottom: 1px solid gray;
+    /* background: linear-gradient(to bottom, var(--bm-red), var(--bm-orange), var(--bm-yellow)); */
+}
+#header-hero-container {
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+}
+
+header {
+
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+    font-family: "Roboto", "Helvetica", "Sans-serif";
+    font-size: 1.7rem;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+    
+}
+#logo img{
+    width: 6rem;
+    height: 4rem;
+}
+
+.humburger-menu {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.humburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+header ul {
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#close-flyout {
+    display: none;
+
+}
+
+header ul li a {
+    color: #999;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header ul.is-sticky li a {
+    color: #000;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    color: #fff;
+}
+
+header ul.is-sticky li a:hover,
+header ul.is-sticky li a:active {
+    color: #f69314;
+}
+
+/* end: header styles */
+
+
+/* end: hero styles */
+@media (max-width:991px) {
+    #logo {
+        top: 1px;
+    }
+
+    #nav-toggle {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        background: #fff;
+        right: -100%;
+        top: 0;
+        margin: 0;
+        padding: 2rem;
+        height: 100%;
+        box-sizing: border-box;
+        box-shadow: 5px 0 10px 3px #999;
+        width: 40vw;
+    }
+
+    #close-flyout {
+        position: absolute;
+        right: 2rem;
+        font-size: 30px;
+        color: #777;
+        cursor: pointer;
+        display: block;
+        line-height: 2;
+        margin: 0;
+        top: 1px;
+        margin-left: 28rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav ul li:first-child {
+        margin-top: 50px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        color: #212529;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        color: #f69314;
+    }
+
+}
