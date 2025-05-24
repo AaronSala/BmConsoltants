@@ -107,7 +107,11 @@ header ul.is-sticky li a:hover,
 header ul.is-sticky li a:active {
     color: #f69314;
 }
-
+.flex.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* end: header styles */
 
 
