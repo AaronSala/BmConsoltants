@@ -9,6 +9,7 @@ const Hero = () => {
         <div className="fade ">
           <div className="hero-text ">
             <h1>For Quality Images And Videos </h1>
+            <h2>Lets keep All Memories Clean !</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Laboriosam recusandae

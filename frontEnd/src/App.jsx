@@ -5,6 +5,7 @@ import "./App.css";
 import Offers from "./components/Offers";
 import Sliders from "./components/Slider";
 import Packages from "./components/Packages";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Offers />
       <Sliders />
       <Packages />
+      <Testimonials />
     </>
   );
 }
