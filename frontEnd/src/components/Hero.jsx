@@ -8,7 +8,6 @@ const Hero = () => {
       <section id="hero">
         <div className="fade ">
           <div className="hero-text ">
-           
             <h1>For Quality Images And Videos </h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -18,6 +17,7 @@ const Hero = () => {
               incidunt?
             </p>
           </div>
+          <div className="moon"></div>
         </div>
       </section>
     </div>

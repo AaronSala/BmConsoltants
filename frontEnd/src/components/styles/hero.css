@@ -49,3 +49,17 @@
     font-weight: 500;
     font-style: oblique;
   }
+
+  .moon{
+    position: absolute;
+    z-index: -3;
+   top: 2rem;
+   left: 4rem;
+    width: 20%;
+    height: 20%;
+    background-color: #fafafa;
+    border-radius: 50%;
+    filter: blur(7rem);
+    opacity: 4;
+    background-color: #f9f944;
+  }

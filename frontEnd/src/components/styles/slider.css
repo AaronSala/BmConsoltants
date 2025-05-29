@@ -1,33 +1,101 @@
 .slides{
     margin-top: 1rem;
+    background: linear-gradient(to right, #060606, #2c2c2c);
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    text-align: center;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+   
+    }
+
+   
 h2 {
     font-size: 2.1rem;
     color: #f69314;
     font-weight: 800;
-    margin-bottom: 1rem;
     line-height: 1.2; }
 .slider-container {
-    display: flex;
-    gap: 8px;
+    margin-top: 5rem;
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    align-items: center;
+    left: calc(50% -100px);
+    text-align: center;
+    transform-style: preserve-3d;
+    transform:perspective(1000px);
+    animation: autoRun 50s linear infinite;
     
+}
+@keyframes autoRun {
+from{
+    transform: perspective(1000px) rotateY(0deg);
+}
+to{
+    transform: perspective(1000px) rotateY(360deg);
+}
+}
+
+.slider-container .item{
+    position: absolute;
+    inset: 0 0 0 0 ;
+    transform: 
+    rotateY(calc( (var(--position) - 1)*(360 / var(--quantity)) * 1deg))
+     translateZ(350px);
+     background: rgba(255, 255, 255, 0.2);
+}
+.slider-container .item img { 
     width: 100%;
-    height: 40vh;
-    align-items: center;
-    justify-content: center;
-}
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+ }
 
-.slider-container .slick-slide {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-}
+ /* styles for the stars */
+ .starry-background {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: 0;
+     overflow: hidden;
+ }
 
-.slider-container img {
-    width: 18rem;
-    height: 22rem;
-   
-    object-fit: cover; }
+ .star {
+     position: absolute;
+     background: rgb(244, 120, 120);
+     clip-path: polygon(50% 0%,
+             61% 35%,
+             98% 35%,
+             68% 57%,
+             79% 91%,
+             50% 70%,
+             21% 91%,
+             32% 57%,
+             2% 35%,
+             39% 35%);
+     box-shadow: 0 0 5px white, 0 0 10px white;
+     animation: twinkle 2s infinite ease-in-out;
+ }
+
+ @keyframes twinkle {
+
+     0%,
+     100% {
+         opacity: 1;
+         transform: scale(1);
+     }
+
+     50% {
+         opacity: 0.2;
+         transform: scale(0.2);
+     }
+ }

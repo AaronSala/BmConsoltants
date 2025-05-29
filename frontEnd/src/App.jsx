@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import "./App.css";
 import Offers from "./components/Offers";
 import Sliders from "./components/Slider";
+import Packages from "./components/Packages";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Offers />
       <Sliders />
+      <Packages />
     </>
   );
 }
