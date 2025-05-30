@@ -6,6 +6,8 @@ import Offers from "./components/Offers";
 import Sliders from "./components/Slider";
 import Packages from "./components/Packages";
 import Testimonials from "./components/Testimonials";
+import Contacts from "./components/Contacts";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Sliders />
       <Packages />
       <Testimonials />
+      <Contacts />
+      <Footer />
     </>
   );
 }

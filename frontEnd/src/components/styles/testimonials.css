@@ -1,12 +1,11 @@
-.testimonies{
+ .testimonies.container{
     
     max-width: 800px;
-        margin: 0 auto;
+        margin-top: 4rem ;
         padding:8rem 2rem;
         text-align: center;
-        margin-top: 3rem;
         margin-bottom: 3rem;
-       
+      
 }
 .quotes{
    
