@@ -2,9 +2,7 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTimes
-} from "@fortawesome/free-solid-svg-icons";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 import Hero from "./Hero";
 
@@ -39,7 +37,8 @@ const Header = () => {
       if (scrollTop > 0) {
         navMenu?.classList.add("is-sticky");
         logo?.style.setProperty("color", "#000");
-        headerElem?.style.setProperty("background", "#fff");
+        logo?.style.setProperty("background", "#f69314");
+        headerElem?.style.setProperty("background", "#fefefe");
         navToggle?.style.setProperty("border-color", "#000");
 
         navToggle
@@ -47,7 +46,7 @@ const Header = () => {
           .forEach((el) => el.style.setProperty("background-color", "#000"));
       } else {
         navMenu?.classList.remove("is-sticky");
-        logo?.style.setProperty("color", "#fff");
+        logo?.style.setProperty("background", "transparent");
         headerElem?.style.setProperty("background", "transparent");
         navToggle?.style.setProperty("border-color", "#fff");
 
