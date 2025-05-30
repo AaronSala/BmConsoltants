@@ -3,9 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles/slider.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { generateStars } from "./Stars"; 
+
+import { generateStars } from "./Stars";
 
 const Sliders = () => {
   const stars = generateStars(600); // number of stars
