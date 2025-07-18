@@ -29,13 +29,13 @@ const Contacts = () => {
           </div>
           <div id="address-container">
             <label htmlFor="address">Address</label>
-            <address>Kileleshwa Nairobi in the border</address>
+            <address> Nairobi r</address>
 
             <label htmlFor="phone">Phone</label>
-            <a href="#">+254089487672</a>
+            <a href="#">+2547xxxxxxxxx</a>
 
             <label htmlFor="">Email Address</label>
-            <a href="#">ouremail.@homes.com</a>
+            <a href="#">ouremail.@bm.com</a>
           </div>
         </div>
       </div>

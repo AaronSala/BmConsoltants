@@ -82,7 +82,7 @@ const Header = () => {
       <header>
         <div className="flex container">
           <a href="#" id="logo">
-            <img src="/Pasted image.png" alt="Logo" />
+            <img src="/images/Pasted image.png" alt="Logo" />
           </a>
           <nav>
             <button

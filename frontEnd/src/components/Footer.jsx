@@ -50,8 +50,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className='small'>Copyright &copy; 2024 All rights reserved | This project is made with
-        <span className="fa fas-heart"></span> by Aaron</div>
+      <div className='small'>Copyright &copy; 2024 All rights reserved |  by Arfrim</div>
       </div>
   )
 }
